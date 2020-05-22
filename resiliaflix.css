@@ -1,0 +1,65 @@
+nav{
+    background: grey; 
+    height: 80px; /*vai se posicionar a direita*/
+    width: 100%; /*vai ocupar 100% o espaço na tela*/
+} 
+
+.cabecalhoPrincipal-titulo{ 
+    color: black;
+    font-size: 40px; /*tamanho da fonte*/
+    line-height: 80px;/*alinhar a direita*/
+    padding: 0 100px; /*determinar a distancia entre os elementos*/
+    font-weight: bold; 
+}
+
+nav ul{         /*referenciando a lista dentro da tag nav*/
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li a{  /*O a é referente ao href*/ 
+    color: rgb(82, 10, 82); 
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px; 
+    text-transform: uppercase; /*vai tirar o clicavel do elemento*/  
+}
+
+nav ul li{ 
+    display: inline-block;
+    line-height: 80px; /*define a altura da linha*/
+    margin: 0 5px;
+}
+
+body{
+    font-family: Verdana; 
+}
+
+*{
+    padding: 0; /*tirou o espaço que ficou antes do cabeçalho*/
+    margin: 0;
+    text-decoration: none; /*tira o estilo da letra*/
+    list-style: none; 
+    box-sizing: border-box;
+}
+
+.a.active, a:hover{  /*quando o usario passar o mouse em cima do menu criará um efeito*/
+    background: plum;
+    transition: 5s;
+}
+
+footer{
+    
+    position: absolute;/* margin-bottom: 10%   0; pesquisar depois e responder aqui*/
+    bottom: 0;
+    width: 100%; /*vai ocupar 100% da tela*/
+    padding: 25px;
+    background: rebeccapurple;
+    text-align: center;
+    
+}
+
+.imagem-rodape{
+    height: 30px;
+    width: 30px;
+}
