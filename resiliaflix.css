@@ -16,7 +16,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background: grey; 
-    height: 72px; /*vai se posicionar a direita*/
+    min-height: 72px; /*vai se posicionar a direita*/
 } 
 
 .cabecalhoPrincipal-titulo{ 
@@ -26,12 +26,7 @@ header{
     font-weight: bold; 
 }
 
-nav ul{         /*referenciando a lista dentro da tag nav*/
-    float: right;
-    margin-right: 20px;
-}
-
-nav ul li a{  /*O a é referente ao href*/ 
+nav a{  /*O a é referente ao href*/ 
     color: rgb(82, 10, 82); 
     font-size: 20px;
     padding: 7px 13px;
@@ -40,16 +35,16 @@ nav ul li a{  /*O a é referente ao href*/
     text-decoration: none;
 }
 
-nav ul li a:hover{  /*quando o usario passar o mouse em cima do menu criará um efeito*/
+nav a:hover{  /*quando o usario passar o mouse em cima do menu criará um efeito*/
     background: plum;
     transition: 0.5s;
 }
 
-nav ul li a:active{
+nav a:active{
     background: plum;
 }
 
-nav ul li{ 
+nav a span{ 
     display: inline-block;
     line-height: 80px; /*define a altura da linha*/
     margin: 0 5px;
@@ -96,4 +91,29 @@ footer{
 .imagem-rodape{
     height: 30px;
     width: 30px;
+}
+
+    /*parte mobile*/
+@media(max-width: 750px){
+
+    header{ /*tratamento para o cabeçalho*/
+        flex-direction: column;    
+        min-height: auto;
+    }
+    
+    .cabecalhoPrincipal-nav{
+        display: flex;
+    }
+
+    .conteudoPrincipalFilmes {
+        flex-direction: column; 
+        width: 50%;
+    }
+}
+
+@media(max-width:468px){
+   
+    .cabecalhoPrincipal-nav{
+       flex-direction: column;
+    } 
 }
